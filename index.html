@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0">
+	<title>Akın Tatto</title>
+	<meta name="keywords" content="tatto akın,akın tatto">
+	<meta name="author" content="frexx lebron">
+	<link rel="stylesheet" type="text/css" href="none.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+		::selection{
+			color: blue;
+			text-shadow: 3px 3px 1px red;
+			background-color: yellow;
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #fff;
+			color: #000;
+			font-family: 'Archivo Black', sans-serif;
+			background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=740&t=st=1705853704~exp=1705854304~hmac=32d0ddaa0830d2acac3ab4648755829911608944d8f5bb1f9f639fa4629b7b2d");
+		}
+		header{
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.30);
+			padding: 30px 0 30px 0;
+		}
+		nav{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}nav .logo{
+			margin-right: 50px;
+			color: #fff;
+			font-size: 30px;
+
+		}nav ul.menu{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}nav ul.menu li{
+			list-style: none;
+			margin-left: 10px;
+		}nav ul.menu li:hover .fa-solid{
+			color: #fff;
+			text-shadow: 0px 0px 10px #fff;
+			margin: 10px;
+			transition: 0.5s;
+		}nav ul.menu li a{
+			text-decoration: none;
+			color: #fff;
+			transition: 1s;
+		}nav ul.menu li a:hover{
+			color: gold;
+			text-shadow: 
+			0px 0px 10px gold,
+			0px 0px 20px gold;
+			transition: 0.5s;
+			filter: drop-shadow(0px 0px 30px gold);
+			letter-spacing: 3px;
+		}
+
+
+		.video{
+			background-image: url("https://i.pinimg.com/564x/c2/46/97/c24697c157feb032b14d2de838c3cd40.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.container#a1{
+			padding: 30px;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 500px;
+			background-color: rgba(0, 0, 0, 0.30);
+		}.container#a1 .content{
+			margin-top: -90px;
+		}.container#a1 .content h1{
+			font-size: 45px;
+			color: whitesmoke;
+			filter: 
+					drop-shadow(0px 0px 10px #000)
+					drop-shadow(0px 0px 30px #000);
+		}.container#a1 .content label{
+			color: #fff;
+			filter: 
+					drop-shadow(0px 0px 20px #000)
+					drop-shadow(0px 0px 30px #000);
+			font-size: 20px;
+			display: block;
+			width: 60%;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			animation: frexx 2s ease-in-out;
+			margin-top: 5px;
+		}
+
+
+		.container#a1 .ctn{
+			margin-top: 20px;
+		}.container#a1 .ctn a{
+			color: gold;
+			text-shadow: 0px 0px 10px gold;
+			font-size: 30px;
+			margin: 0 5px 0 5px;
+			transition: 1s;
+		}.container#a1 .ctn a:hover{
+			transition: 0.5s;
+			color: gold;
+			filter: drop-shadow(1px 1px 20px gold);
+		}
+
+
+
+		.hr{
+			background-image: url("yay.png");
+			width: 100%;
+			height: 269px;
+			filter: hue-rotate(302deg);
+			margin:95px 0 95px 0;
+			text-align: center;
+		}.hr h1{
+			position: relative;
+			top: 110px;
+			color: pink;
+			text-shadow: 2px 2px 2px #fff;
+		}.hr:nth-child(10){
+			filter: hue-rotate(0deg);
+			margin-bottom: 130px;
+		}
+
+
+
+			.photos{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				margin-top: 50px;
+			}.photos .photo img{
+				width: 400px;
+				height: 500px;
+				object-fit: cover;
+				margin: 0;
+			}
+
+
+
+
+
+				.trz{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					margin: 40px;
+				}
+
+				.tarzlar{
+					margin: 20px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			.tarzlar .tarz{
+				display: flex;
+				flex-direction: column;
+				padding: 20px;
+				width: 200px;
+				border-radius: 5px;
+				background-color: #fff;
+				transition: 1s;
+				color: gold;
+				text-shadow: 
+				0px 0px 20px gold,
+				0px 0px 30px gold;
+				margin: 10px;
+			}.tarzlar .tarz:hover{
+				transition: 1s;
+				box-shadow: 0px 0px 50px 5px gold;
+				background-image: url("https://i.pinimg.com/564x/51/88/aa/5188aa768e78b143fccafd2436a73c6a.jpg");
+				background-size: cover;
+			}.tarzlar .tarz .tz img{
+				width: 200px;
+			}
+
+			/*
+
+			.photos .photo img:focus{
+				width: 700px;
+				height: 700px;
+				object-fit: cover;
+				margin: 0;
+				text-align: center;
+				box-shadow: 0px 0px 130px 5px;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%);
+				top: 820px;
+			}
+
+			*/
+
+
+		.container#a2{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 40px;
+			border: none;
+			box-shadow: 0px 0px 80px -20px #000;
+			border: 1px solid blue;
+			border-radius: 15px;
+			width: 70%;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			margin-top: 50px;
+		}.container#a2 .content{
+			margin: 30px;
+		}
+
+
+
+		.container#a3{
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 30px;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			padding: 20px;
+
+		}.container#a3 .alan{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 60%;
+			font-size: 15px;
+			border: 2px solid;
+			border-image: linear-gradient(gold,#000)1;
+			padding: 10px;
+			box-shadow: 0px 0px 80px -20px #000;
+			margin: 0 10px 10px 10px;
+		}.container#a3 .content{
+			color: #000;
+			margin: 0 10px 0 10px;
+		}
+
+
+
+
+
+
+
+		.container#a4{
+			margin-top: 30px;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			background-color: red;
+			background-image: url("https://i.pinimg.com/564x/a3/2e/fa/a32efabd01a0508309ed7ec341ca521e.jpg");
+			color: #fff;
+		}.container#a4 .bg_brightness{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			position: relative;
+			backdrop-filter: brightness(20%);
+			padding: 30px 0 30px 0;
+		}.container#a4 .randevu{
+			font-size: 20px;
+			margin-left: 10%;
+			width: 1200px;
+		}.container#a4 .bg_brightness .randevu_takvim{
+			width: 1300px;
+		}.container#a4 .bg_brightness form{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			background-color: rgba(255,215,0,0.7);
+			box-shadow: 0px 0px 120px -30px gold;
+			margin-right: 30%;
+			border-top: 5px solid #000;
+			border-bottom: 5px solid #000;
+			border-left: 1px solid #fff;
+			border-right: 1px solid #fff;
+		}.container#a4 .bg_brightness form input{
+			width: 40%;
+			padding: 10px;
+			margin: 10px;
+			color: #fff;
+			border: 1px solid #000;
+			border-radius: 2px;
+			background-color: transparent;
+			outline: none;
+		}.container#a4 .bg_brightness form input::placeholder,textarea::placeholder{
+			color: #fff;
+		}.container#a4 .bg_brightness textarea{
+			width: 80%;
+			height: 100px;
+			background-color: transparent;
+			padding: 5px;
+			outline-color: aqua;
+		}.container#a4 .bg_brightness form button{
+			color: #000;
+			padding: 10px;
+			background: transparent;
+			border: 1px solid red;
+			border-radius: 2px;
+			color: #fff;
+			font-size: 17px;
+			margin: 10px;
+		}.container#a4 .bg_brightness form button:hover{
+			cursor: pointer;
+			background-image: linear-gradient(to left top, #000 50%,gold 50%);
+			transition: 0.5s;
+			color: red;
+		}
+
+
+		footer{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			background-color: #000;
+			color: #fff;
+			padding: 30px;
+		}
+		footer .footer-container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}footer .footer-container ul{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin-left: 50px;
+			list-style: none;
+		}footer .footer-container ul li{
+			margin-top: 5px;
+		}footer .footer-container ul a{
+			color: gold;
+			text-decoration: none;
+			transition: 0.7s;
+		}footer .footer-container ul a:hover{
+			color: gold;
+			text-shadow: 
+			0px 0px 20px gold,
+			0px 0px 40px gold;
+			transition: 0.5s;
+		}
+
+
+
+
+
+
+
+
+		@keyframes frexx{
+			from{
+				width: 30%;
+				opacity: 0;
+			}
+			to{
+				width: 60%;
+				opacity: 1;
+			}
+		}
+
+
+		@media only screen and (min-width:2000px){
+			.container#a3 .alan{
+			width: 30%;
+		}
+								}
+
+
+
+
+			@media only screen and (max-width:1350px){
+			.tarzlar{
+			display: flex;
+			flex-wrap: wrap;
+		}
+								}
+
+
+			@media only screen and (max-width:650px){
+			.tarzlar{
+			display: flex;
+			flex-wrap: nowrap;
+			overflow:auto;
+			width: 100%;
+		}.tarzlar .tarz{
+			position: relative;
+			left: 150%;
+			transform: translate(-50%);
+		}
+								}
+
+
+		@media only screen and (max-width:975px){
+			.container#a3{
+			display: flex;
+			flex-wrap: wrap;
+		}
+			.container#a3 .alan{
+			display: flex;
+			flex-wrap: wrap;
+		}
+								}
+
+
+
+
+	@media only screen and (max-width:720px){
+			.container#a2{
+			display: flex;
+			flex-wrap: wrap;
+			}
+
+			.container#a4 .bg_brightness{
+			flex-direction: column;
+			}
+
+			.container#a4 .bg_brightness .randevu{
+			width: 70%;
+			}
+
+			.container#a4 .bg_brightness .randevu_takvim{
+			width: 80%;
+			margin-top: 30px;
+			}.container#a4 .bg_brightness .randevu_takvim form{
+			margin-right: 0px;
+			}
+			
+
+			footer{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			footer .footer-container{
+				display: flex;
+				flex-direction: column;
+			}
+			footer .footer-container .footer-content{
+				margin-top: 25px;
+			}
+								}
+
+
+
+	@media only screen and (max-width:526px){
+
+		header nav{
+			display: flex;
+			flex-direction: column;
+		}header nav ul{
+			display: flex;
+			flex-direction: column;
+		}header nav .logo{
+			margin-right: 0;
+		}header nav li{
+			margin-top: 10px;
+		}
+		
+			.photos .photo{
+			margin-left: 20%;
+		}
+
+			.photos .photo img{
+			width: 70%;
+    		height: 60%;
+    		border: 2px solid gold;
+		}.photos .photo img:hover{
+			width: 70%;
+    		height: 60%;
+    		border: 4px solid #000;
+		}
+		
+								}
+
+
+
+
+
+		@media only screen and (max-width:400px){
+		
+			.container#a3 .alan{
+					width: 90%;
+			}
+								}
+	</style>
+</head>
+<body translate="no">
+	<!--MENÜ-->
+	<div class="video">
+		
+		<header>
+		<nav>
+			<!--LOGO-->
+			<div class="logo">Logo</div>
+			<ul class="menu">
+				<li><a href="#"> <i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+				<li><a href="#"> <i class="fa-solid fa-wand-magic-sparkles" style="display: inline;"></i> Tarzlar</a></li>
+				<li><a href="#"> <i class="fa-solid fa-circle-info"></i> Hakkımızda</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--//MENÜ-->
+
+	<div class="container" id="a1">
+		<div class="content">
+			<h1>Tarz Senin Söz Senin <i class="fa-solid fa-wand-magic-sparkles"></i></h1>
+			<label>"Dövme atölyemizde, her hat bir anı, her renk bir duygu, her işlem özel. Sizi anlatan sanatı cildinizde hissedin, bizimle yaşayan bir anı yaratın."</label>
+		</div>
+
+		<!--SOSYAL MEDYA-->
+		<div class="ctn">
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+			<a href="#"><i class="fa-brands fa-facebook"></i></a>
+			<a href="#"><i class="fa-brands fa-youtube"></i></a>
+		</div>
+		<!--//SOSYAL MEDYA-->
+
+	</div>
+
+
+	</div>
+
+
+	<div class="hr">
+	<h1>AKIN DESİGN TATTO</h1>
+	</div>
+
+
+		<div class="photos">
+			
+			<div class="photo">
+				<img src="https://i.pinimg.com/564x/71/5b/a1/715ba1d5afe9d50b65e42ac8fe457cf5.jpg" tabindex="1">
+			</div>
+
+			<div class="photo">
+				<img src="https://i.pinimg.com/564x/c8/e6/af/c8e6aff7efeb4b353694085013d62df6.jpg" tabindex="1">
+			</div>
+
+			<div class="photo">
+				<img src="https://i.pinimg.com/564x/af/ca/a6/afcaa6f53ff77ff6529cd0815f1ebeea.jpg" tabindex="1">
+			</div>
+
+			<div class="photo">
+				<img src="https://i.pinimg.com/564x/77/c7/fb/77c7fbef36292f40ba3843ac45317c32.jpg" tabindex="1">
+			</div>
+
+			<div class="photo">
+				<img src="https://i.pinimg.com/564x/ad/13/ab/ad13ab79d209e4c2e769b47041be391d.jpg" tabindex="1">
+			</div>
+
+
+			<div class="photo">
+				<img src="https://i.pinimg.com/564x/4c/ec/5a/4cec5af6de267304b01d0bc461613f47.jpg" tabindex="1">
+			</div>
+
+		</div>
+
+
+
+
+
+		<div class="trz">
+			<h1>Tarzlar</h1>
+			<div class="tarzlar">
+			
+			<div class="tarz">
+				<div class="tz">
+					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
+				</div>
+				<div class="tz">
+					Anotik Alev
+				</div>
+			</div>
+
+
+			<div class="tarz">
+				<div class="tz">
+					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
+				</div>
+				<div class="tz">
+					Anotik Alev
+				</div>
+			</div>
+
+
+			<div class="tarz">
+				<div class="tz">
+					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
+				</div>
+				<div class="tz">
+					Anotik Alev
+				</div>
+			</div>
+
+
+			<div class="tarz">
+				<div class="tz">
+					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
+				</div>
+				<div class="tz">
+					Anotik Alev
+				</div>
+			</div>
+
+
+
+			<div class="tarz">
+				<div class="tz">
+					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
+				</div>
+				<div class="tz">
+					Anotik Alev
+				</div>
+			</div>
+
+		</div>
+
+		</div>
+
+
+
+
+
+
+
+	<div class="container" id="a2">
+		<div class="content">
+			<img src="https://i.pinimg.com/564x/a7/85/69/a78569a3629b567f31721d196d960dea.jpg" width="200px" height="200px">
+		</div>
+		<div class="content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+
+	<div class="container" id="a2">
+		<div class="content">
+			<img src="https://i.pinimg.com/564x/a7/85/69/a78569a3629b567f31721d196d960dea.jpg" width="200px" height="200px">
+		</div>
+		<div class="content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+
+
+	<div class="container" id="a2">
+		<div class="content">
+			<img src="https://i.pinimg.com/564x/a7/85/69/a78569a3629b567f31721d196d960dea.jpg" width="200px" height="200px">
+		</div>
+		<div class="content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+
+	<div class="container" id="a2">
+		<div class="content">
+			<img src="https://i.pinimg.com/564x/a7/85/69/a78569a3629b567f31721d196d960dea.jpg" width="200px" height="200px">
+		</div>
+		<div class="content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+
+
+
+	<div class="hr"></div>
+
+
+
+	<div class="container" id="a3">
+			<div class="alan">
+			
+			<div class="content">
+			<img src="https://i.pinimg.com/736x/b3/3a/6b/b33a6b1309694293b744e98714ba3bec.jpg" width="200px">
+		</div>
+
+		<div class="content">
+			<h3>Kübra AYDOĞDU</h3>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+			</div>
+
+
+					<div class="alan">
+			
+			<div class="content">
+			<img src="https://i.pinimg.com/736x/b3/3a/6b/b33a6b1309694293b744e98714ba3bec.jpg" width="200px">
+		</div>
+
+		<div class="content">
+			<h3>Kübra AYDOĞDU</h3>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+			</div>
+
+	</div>
+
+
+
+
+	<div class="container" id="a3">
+			<div class="alan">
+			
+			<div class="content">
+			<img src="https://i.pinimg.com/736x/b3/3a/6b/b33a6b1309694293b744e98714ba3bec.jpg" width="200px">
+		</div>
+
+		<div class="content">
+			<h3>Kübra AYDOĞDU</h3>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+			</div>
+
+
+					<div class="alan">
+			
+			<div class="content">
+			<img src="https://i.pinimg.com/736x/b3/3a/6b/b33a6b1309694293b744e98714ba3bec.jpg" width="200px">
+		</div>
+
+		<div class="content">
+			<h3>Kübra AYDOĞDU</h3>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+			</div>
+
+	</div>
+
+
+
+	<div class="container" id="a4">
+		<div class="bg_brightness">
+			<div class="randevu">
+			<h2>Şimdi Randevu Alın</h2>
+			<p>Randevu alıp bizlerle belirli gün içerisinde görüşüp, danışabilirsiniz.</p>
+		</div>
+		<div class="randevu_takvim" id="randevu_takvim">
+			<form>
+				<h1 style="width:100%;text-align: center;">Randevu Formu</h1>
+				<input type="text" placeholder="İsim" name="name">
+				<input type="text" placeholder="Soyisim" name="surname">
+				<input type="text" placeholder="Yaş" name="age">
+				<input type="text" placeholder="Telefon Numarası" name="phone_number">
+				<input type="date" placeholder="Randevu Tarihi" name="date">
+				<textarea type="text" placeholder="Not Bırakmak İsterseniz..." name="note"></textarea>
+				<br>
+				<button>Randevu Oluştur</button>
+			</form>
+		</div>
+		</div>
+	</div>
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>İletişim Bilgileri</h3>
+            <p>Adres: Dövme Sokağı No: 123, Şehir, Ülke</p>
+            <p>Telefon: +123 456 7890</p>
+            <p>E-posta: info@dovme.com</p>
+        </div>
+        <div class="footer-content">
+            <ul>
+            	<h3>Hızlı Linkler</h3>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Dövme Galerisi</a></li>
+                <li><a href="#">Sanatçılarımız</a></li>
+                <li><a href="#">Randevu Al</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <ul class="social-icons">
+            	<h3>Bizi Takip Edin</h3>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script type="text/javascript">
+
+	var header = document.getElementsByTagName("header");
+	var a4 = document.getElementById("a4");
+
+	window.addEventListener("scroll",()=>{
+
+		if(scrollY >= 200){
+			header[0].style.backgroundColor = "#000";
+			header[0].style.position = "fixed";
+			header[0].style.top = "0px";
+			header[0].style.zIndex = "999";
+
+
+		}if(scrollY <= 200){
+			header[0].style.backgroundColor = "rgba(0,0,0,0.30)";
+			header[0].style.position = "relative";
+			header[0].style.top = "0px";
+			header[0].style.zIndex = "999";
+
+		}
+	});
+
+
+/*
+
+	if (window.matchMedia("(min-width:700px").matches) {
+		window.addEventListener("scroll",()=>{
+			if (scrollY>=5300) {
+			a4.style.zIndex = "999";
+			a4.style.position = "fixed";
+			a4.style.right = "10%";
+			a4.style.top = "60px";
+			a4.style.width = "100%";
+			}
+			if (scrollY<=4900) {
+			a4.style.zIndex = "999";
+			a4.style.position = "relative";
+			a4.style.right = "0";
+			a4.style.top = "0px";
+			a4.style.width = "100%";
+			}
+		});
+	}
+
+*/
+</script>
+</body>
+</html>

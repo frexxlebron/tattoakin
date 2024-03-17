@@ -23,12 +23,17 @@
 		*{
 			margin: 0;
 			padding: 0;
+			scroll-behavior: smooth;
 		}
 		body{
 			background-color: #fff;
 			color: #000;
 			font-family: 'Archivo Black', sans-serif;
-			background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=740&t=st=1705853704~exp=1705854304~hmac=32d0ddaa0830d2acac3ab4648755829911608944d8f5bb1f9f639fa4629b7b2d");
+			background-image: url("https://img.freepik.com/premium-photo/golden-background-gold-metal-texture-background_1089697-1907.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			backdrop-filter: brightness(50%);
+			
 		}
 		header{
 			width: 100%;
@@ -72,7 +77,7 @@
 
 
 		.video{
-			background-image: url("https://i.pinimg.com/564x/c2/46/97/c24697c157feb032b14d2de838c3cd40.jpg");
+			background-image: url("https://cdn.pixabay.com/photo/2017/10/19/12/49/background-2867531_1280.png");
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
@@ -359,18 +364,13 @@
 			left: 4px;
 			text-shadow: 0px 3px 1px orange;
 			animation: frexx_love 2s infinite;
-		}.container#a5 div:nth-child(1){
-			margin: 120px;
-		}
-		}.container#a5 div:nth-child(1) p{
+		}.container#a5 div p{
 			color: #fff;
-		}.container#a5 div:nth-child(1) h2{
+		}.container#a5 div h2{
 			color: gold;
 			text-shadow: 0px 0px 30px gold;
-		}.container#a5 div:nth-child(2){
-			margin: 60px;			
-		}.container#a5 div:nth-child(2) img{
-			width: 200px;
+		}.container#a5 div img{
+			width: 500px;
 			filter: drop-shadow(1px 50px 30px #000);
 		}.container#a5 button{
 			padding: 10px;
@@ -431,6 +431,52 @@
 			transition: 0.5s;
 		}
 
+
+
+
+
+
+
+		.tarzlar_link{
+			color: gold;
+			text-decoration: none;
+			margin-top: 100px;
+			font-size: 30px;
+		}.tarzlar_link:before{
+			color: gold;
+			text-decoration: none;
+			margin-top: 100px;
+			font-size: 30px;
+		}
+
+
+
+		.tarzlar_text{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: gold;
+			text-shadow: 0px 0px 20px gold;
+			font-size: 50px;
+			margin: 50px;
+		}
+
+
+
+		.tarzlar_photos{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}.tarzlar_photo img{
+			height: 500px;
+			width: 500px;
+			margin: 20px;
+			box-shadow: 
+			5px 7px 0px gold,
+			-5px -7px 0px #fff,
+			14px 15px 0px blue;
+		}
 
 
 
@@ -524,25 +570,6 @@
 			}
 			
 
-
-			.container#a5{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column-reverse;
-			text-align: center;
-			}.container#a5 div:nth-child(1) {
-			    margin: 20px;
-			    position: relative;
-			    top: -20px;
-			}
-			.container#a5 div:nth-child(2) img {
-			    width: 200px;
-			    filter: drop-shadow(1px 50px 30px #000);
-
-			}
-
-
 			footer{
 				display: flex;
 				justify-content: center;
@@ -586,6 +613,12 @@
     		height: 60%;
     		border: 4px solid #000;
 		}
+
+
+		.tarzlar_photos .tarzlar_photo img{
+			width: 350px;
+			height: 350px;
+		}
 		
 								}
 
@@ -598,6 +631,12 @@
 			.container#a3 .alan{
 					width: 90%;
 			}
+
+
+			.tarzlar_photos .tarzlar_photo img{
+			width: 270px;
+			height: 270px;
+		}
 								}
 	</style>
 </head>
@@ -611,7 +650,7 @@
 			<div class="logo">Logo</div>
 			<ul class="menu">
 				<li><a href="#"> <i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
-				<li><a href="tarzlar.html"> <i class="fa-solid fa-wand-magic-sparkles" style="display: inline;"></i> Tarzlar</a></li>
+				<li><a href="#"> <i class="fa-solid fa-wand-magic-sparkles" style="display: inline;"></i> Tarzlar</a></li>
 				<li><a href="#"> <i class="fa-solid fa-circle-info"></i> Hakkımızda</a></li>
 			</ul>
 		</nav>
@@ -620,18 +659,17 @@
 
 	<div class="container" id="a1">
 		<div class="content">
-			<h1>Tarz Senin Söz Senin <i class="fa-solid fa-wand-magic-sparkles"></i></h1>
-			<label>"Dövme atölyemizde, her hat bir anı, her renk bir duygu, her işlem özel. Sizi anlatan sanatı cildinizde hissedin, bizimle yaşayan bir anı yaratın."</label>
+			<h1>Tarzlar <i class="fa-solid fa-wand-magic-sparkles"></i></h1>
+			<label>Tarzlarımızı kontrol edin ! Onlardan haz alın ve beğenin :)</label>
 		</div>
 
-		<!--SOSYAL MEDYA-->
-		<div class="ctn">
-			<a href="#"><i class="fa-brands fa-instagram"></i></a>
-			<a href="#"><i class="fa-brands fa-pinterest"></i></a>
-			<a href="#"><i class="fa-brands fa-facebook"></i></a>
-			<a href="#"><i class="fa-brands fa-youtube"></i></a>
-		</div>
-		<!--//SOSYAL MEDYA-->
+		<a href="#tarzlar" class="tarzlar_link">
+			<i class="fa-solid fa-arrow-down"></i>
+		Tarzlara Bak
+			<i class="fa-solid fa-arrow-down"></i>
+		</a>
+
+
 
 	</div>
 
@@ -639,305 +677,31 @@
 	</div>
 
 
-	<div class="hr">
-	<h1>AKIN DESİGN TATTO</h1>
+	<div class="tarzlar_text" id="tarzlar">
+		<div>Tarzlar</div>
 	</div>
 
-
-		<div class="photos">
-			
-			<div class="photo">
-				<img src="https://i.pinimg.com/564x/71/5b/a1/715ba1d5afe9d50b65e42ac8fe457cf5.jpg" tabindex="1">
-			</div>
-
-			<div class="photo">
-				<img src="https://i.pinimg.com/564x/c8/e6/af/c8e6aff7efeb4b353694085013d62df6.jpg" tabindex="1">
-			</div>
-
-			<div class="photo">
-				<img src="https://i.pinimg.com/564x/af/ca/a6/afcaa6f53ff77ff6529cd0815f1ebeea.jpg" tabindex="1">
-			</div>
-
-			<div class="photo">
-				<img src="https://i.pinimg.com/564x/77/c7/fb/77c7fbef36292f40ba3843ac45317c32.jpg" tabindex="1">
-			</div>
-
-			<div class="photo">
-				<img src="https://i.pinimg.com/564x/ad/13/ab/ad13ab79d209e4c2e769b47041be391d.jpg" tabindex="1">
-			</div>
-
-
-			<div class="photo">
-				<img src="https://i.pinimg.com/564x/4c/ec/5a/4cec5af6de267304b01d0bc461613f47.jpg" tabindex="1">
-			</div>
-
+	<div class="tarzlar_photos">
+		<div class="tarzlar_photo">
+			<img src="https://i.pinimg.com/564x/a0/73/8b/a0738bad428da9825a7ede057e84f9b2.jpg">
 		</div>
-
-
-
-
-
-		<div class="trz">
-			<h1>Tarzlar</h1>
-			<div class="tarzlar">
-			
-			<div class="tarz">
-				<div class="tz">
-					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
-				</div>
-				<div class="tz">
-					Anotik Alev
-				</div>
-			</div>
-
-
-			<div class="tarz">
-				<div class="tz">
-					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
-				</div>
-				<div class="tz">
-					Anotik Alev
-				</div>
-			</div>
-
-
-			<div class="tarz">
-				<div class="tz">
-					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
-				</div>
-				<div class="tz">
-					Anotik Alev
-				</div>
-			</div>
-
-
-			<div class="tarz">
-				<div class="tz">
-					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
-				</div>
-				<div class="tz">
-					Anotik Alev
-				</div>
-			</div>
-
-
-
-			<div class="tarz">
-				<div class="tz">
-					<img src="https://pngimg.com/uploads/tattoo/tattoo_PNG5469.png">
-				</div>
-				<div class="tz">
-					Anotik Alev
-				</div>
-			</div>
-
+		<div class="tarzlar_photo">
+			<img src="https://i.pinimg.com/736x/bc/38/f5/bc38f52d4f4d70e7281edd5bfd04793a.jpg">
 		</div>
-
+		<div class="tarzlar_photo">
+			<img src="https://i.pinimg.com/564x/b2/34/bd/b234bdd125fc5f2bb7d220ace42adb4c.jpg">
 		</div>
-
-
-
-
-
-
-
-	<div class="container" id="a2">
-		<div class="content">
-			<img src="https://i.pinimg.com/564x/a7/85/69/a78569a3629b567f31721d196d960dea.jpg" width="200px" height="200px">
+		<div class="tarzlar_photo">
+			<img src="https://i.pinimg.com/564x/39/97/17/399717ef904f1994e8ed9e9e9f01d7d5.jpg">
 		</div>
-		<div class="content">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<div class="tarzlar_photo">
+			<img src="https://i.pinimg.com/564x/57/e3/e4/57e3e493272bfb3143d4c5814cc828a8.jpg">
 		</div>
-	</div>
-
-
-	<div class="container" id="a2">
-		<div class="content">
-			<img src="https://i.pinimg.com/564x/a7/85/69/a78569a3629b567f31721d196d960dea.jpg" width="200px" height="200px">
-		</div>
-		<div class="content">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-	</div>
-
-
-
-	<div class="container" id="a2">
-		<div class="content">
-			<img src="https://i.pinimg.com/564x/a7/85/69/a78569a3629b567f31721d196d960dea.jpg" width="200px" height="200px">
-		</div>
-		<div class="content">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-	</div>
-
-
-	<div class="container" id="a2">
-		<div class="content">
-			<img src="https://i.pinimg.com/564x/a7/85/69/a78569a3629b567f31721d196d960dea.jpg" width="200px" height="200px">
-		</div>
-		<div class="content">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-	</div>
-
-
-
-
-	<div class="hr"></div>
-
-
-
-	<div class="container" id="a3">
-			<div class="alan">
-			
-			<div class="content">
-			<img src="https://i.pinimg.com/736x/b3/3a/6b/b33a6b1309694293b744e98714ba3bec.jpg" width="200px">
-		</div>
-
-		<div class="content">
-			<h3>Kübra AYDOĞDU</h3>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-
-			</div>
-
-
-					<div class="alan">
-			
-			<div class="content">
-			<img src="https://i.pinimg.com/736x/b3/3a/6b/b33a6b1309694293b744e98714ba3bec.jpg" width="200px">
-		</div>
-
-		<div class="content">
-			<h3>Kübra AYDOĞDU</h3>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-
-			</div>
 
 	</div>
 
 
-
-
-	<div class="container" id="a3">
-			<div class="alan">
-			
-			<div class="content">
-			<img src="https://i.pinimg.com/736x/b3/3a/6b/b33a6b1309694293b744e98714ba3bec.jpg" width="200px">
-		</div>
-
-		<div class="content">
-			<h3>Kübra AYDOĞDU</h3>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-
-			</div>
-
-
-					<div class="alan">
-			
-			<div class="content">
-			<img src="https://i.pinimg.com/736x/b3/3a/6b/b33a6b1309694293b744e98714ba3bec.jpg" width="200px">
-		</div>
-
-		<div class="content">
-			<h3>Kübra AYDOĞDU</h3>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-
-			</div>
-
-	</div>
-
-
-
-	<div class="container" id="a4">
-		<div class="bg_brightness">
-			<div class="randevu">
-			<h2>Şimdi Randevu Alın</h2>
-			<p>Randevu alıp bizlerle belirli gün içerisinde görüşüp, danışabilirsiniz.</p>
-		</div>
-		<div class="randevu_takvim" id="randevu_takvim">
-			<form>
-				<h1 style="width:100%;text-align: center;">Randevu Formu</h1>
-				<input type="text" placeholder="İsim" name="name">
-				<input type="text" placeholder="Soyisim" name="surname">
-				<input type="text" placeholder="Yaş" name="age">
-				<input type="text" placeholder="Telefon Numarası" name="phone_number">
-				<input type="date" placeholder="Randevu Tarihi" name="date" placeholder="Randevu Tarihi Seçin">
-				<textarea type="text" placeholder="Not Bırakmak İsterseniz..." name="note"></textarea>
-				<br>
-				<button>Randevu Oluştur</button>
-			</form>
-		</div>
-		</div>
-	</div>
-
-
-
-
-
-
-	<div class="container" id="a5">
-		<div>
-			<h2>İşimizi <psan style="color: red; font-size: 25px;" class="love">Sevgi</span> İle Yapıyoruz</h2>
-			
-			<p>Randevu almak için bir ekran kadar uzağındayız !</p>
-
-			<button>Randevu Al</button>
-
-		</div>
-		<div>
-			<img src="man/man1.png" width="300px">
-		</div>
-	</div>
-
-
-
-
-
+	
 
 <footer>
 	<hr class="gold">
@@ -996,7 +760,6 @@
         </div>
     </div>
 </footer>
-
 
 
 
